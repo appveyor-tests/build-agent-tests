@@ -1,0 +1,9 @@
+init:
+- appveyor version
+
+test_script:
+- sh: |
+    echo "Hello, bash!"
+    exit 2
+
+build: off
