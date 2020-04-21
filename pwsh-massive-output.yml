@@ -1,3 +1,6 @@
+environment:
+  APPVEYOR_CONSOLE_PTY_WIDTH: 30
+
 init:
 - appveyor version
 
@@ -9,5 +12,7 @@ test_script:
       Write-Host "." -NoNewline
       #Start-Sleep -m 1
     }
+    Write-Host "Done" -ForegroundColor Blue
+- ps: ls --color=auto
 
 build: off
