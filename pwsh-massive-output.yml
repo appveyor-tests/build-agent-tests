@@ -2,6 +2,7 @@ environment:
   APPVEYOR_CONSOLE_PTY_WIDTH: 30
 
 init:
+- echo "Hey, bash!"
 - appveyor version
 
 test_script:
@@ -13,6 +14,6 @@ test_script:
       #Start-Sleep -m 1
     }
     Write-Host "`nDone" -ForegroundColor Blue
-- ps: ls -al --color=auto /home/appveyor
+- ps: ls -al --color=auto /opt/appveyor/build-agent
 
 build: off
