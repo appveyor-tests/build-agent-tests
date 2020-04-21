@@ -1,0 +1,10 @@
+init:
+- appveyor version
+
+test_script:
+- sh: |
+    ls ~/
+    bad-command
+    bash --version
+
+build: off
