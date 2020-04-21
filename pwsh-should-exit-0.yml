@@ -1,0 +1,8 @@
+init:
+- appveyor version
+
+test_script:
+- ps: Write-Host "Hello, bash!"
+- pwsh: exit 0
+
+build: off
