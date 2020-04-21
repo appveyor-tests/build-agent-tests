@@ -1,0 +1,10 @@
+init:
+- appveyor version
+
+test_script:
+- ps: |
+    Get-Date
+    bash --version
+    Get-Date
+
+build: off
