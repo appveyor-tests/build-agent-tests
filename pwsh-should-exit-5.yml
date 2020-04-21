@@ -3,7 +3,7 @@ init:
 
 test_script:
 - ps: |
-    Write-Host "Hello, bash!"
+    Write-Host "Hello, PowerShell!" -ForegroundColor Yellow
     exit 5
 
 build: off
