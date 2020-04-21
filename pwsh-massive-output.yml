@@ -12,7 +12,7 @@ test_script:
       Write-Host "." -NoNewline
       #Start-Sleep -m 1
     }
-    Write-Host "Done" -ForegroundColor Blue
-- ps: ls --color=auto
+    Write-Host "`nDone" -ForegroundColor Blue
+- ps: ls -al --color=auto /home/appveyor
 
 build: off
