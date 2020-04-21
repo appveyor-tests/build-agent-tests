@@ -2,7 +2,7 @@ init:
 - appveyor version
 
 test_script:
-- ps: Write-Host "Hello, bash!"
+- ps: Write-Host "Hello, PowerShell!" -ForegroundColor Magenta
 - pwsh: exit 0
 
 build: off
