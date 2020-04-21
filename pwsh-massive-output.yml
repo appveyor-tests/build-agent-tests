@@ -1,0 +1,13 @@
+init:
+- appveyor version
+
+test_script:
+- ps: Write-Host "Welcome to PS tests!" -ForegroundColor Yellow
+- ps: bash --version
+- ps: |
+    for($i = 0; $i -lt 2000; $i++) {
+      Write-Host "." -NoNewline
+      #Start-Sleep -m 1
+    }
+
+build: off
