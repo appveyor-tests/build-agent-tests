@@ -1,0 +1,7 @@
+environment:
+  APPVEYOR_CONSOLE_PTY_WIDTH: 40
+  
+test_script:
+- ls /opt/appveyor/build-agent --color=auto
+
+build: off
